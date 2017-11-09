@@ -66,37 +66,47 @@
                 <?php 
                     include_once 'database.php';
                     $cod = $_POST['cod'];
-                    $dataInscricao = $_POST['dataInscricao'];
+                    $matricula = $_POST['matricula'];
+                    $da = $_POST['da'];
+                    $ng = $_POST['ng'];
+                    $trigrama = $_POST['trigrama'];
+                    $aqs = $_POST['aqs'];
+                    $pg = $_POST['pg'];
+                    $forca = $_POST['forca'];
+                    $po = $_POST['po'];
+                    $cf = $_POST['cf'];
+                    $omo = $_POST['omo'];
+                    $rm = $_POST['rm'];
                     
-                    $tipoPermissao = $_POST['tipoPermissao'];
-                    $posto = $_POST['posto'];
                     $nome = $_POST['nome'];
-                    $cpf = $_POST['cpf'];
-                    $idt = $_POST['idt'];
-                    $orgaoExpedidor = $_POST['orgaoExpedidor'];
-                    $dataExpedicao = $_POST['dataExpedicao'];
-                    $tipo = $_POST['tipo'];
-                    $estadoCivil = $_POST['estadoCivil'];
-                    $telResidencial = $_POST['telResidencial'];
-                    $celular = $_POST['celular'];
                     $email = $_POST['email'];
-                    $empresa = $_POST['empresa'];
-                    $cargo = $_POST['cargo'];
-                    $telComercial = $_POST['telComercial'];
-                    $nasc = $_POST['dataNascimento'];
-                    $profissao = $_POST['prof'];
-                    $parentesco = $_POST['parentesco'];
+                    $dn = $_POST['dn'];
+                    $ec = $_POST['ec'];
+                    $naturalidade = $_POST['naturalidade'];
+                    $nacionalidade = $_POST['nacionalidade'];
+                    $cpf = $_POST['cpf'];
+                    $rg = $_POST['rg'];
+                    $oe = $_POST['oe'];
+                    $de = $_POST['de'];
+                    $im = $_POST['im'];
+                    $preccp = $_POST['preccp'];
+                    $te = $_POST['te'];
+                    $zona = $_POST['zona'];
+                    $secao = $_POST['secao'];
+                    $pai = $_POST['pai'];
+                    $mae = $_POST['mae'];
 
-                    //Endereço
-
+                    $rua = $_POST['rua'];
                     $numero = $_POST['numero'];
                     $complemento = $_POST['complemento'];
                     $bairro = $_POST['bairro'];
                     $cidade = $_POST['cidade'];
                     $uf = $_POST['uf'];
 
-                    if (isset($_POST['cadastroTitular'])) {
-
+                    if (isset($_POST['cadastroPessoal'])) {
+                    
+                    // Para Back-End
+                    /*
                         $dao = new Database();
                         $dao->uploadPhoto($_FILES["fileToUpload"]["name"], $_FILES["fileToUpload"]["tmp_name"]);
                         $sql = "insert into titular (dataInscricao, validade, tipoPermissao, posto, nome, identidade, orgaoExpedidor, 
@@ -111,6 +121,7 @@
                             $sqlEndereco = "insert into endereco (cod, numero, complemento, bairro, cidade, uf) values ('$id', '$numero', 
                                 '$complemento', '$bairro', '$cidade', '$uf');";
                             $dao->query($sqlEndereco);
+                            */
                     }
                 ?>    
 
@@ -120,7 +131,7 @@
                                 <img width="120px" class="img-rounded" src="fotos/.jpg">
                                 <input type="file" name="fileToUpload" id="fileToUpload" style="">
                             </aside>
-                    </div> <br/>
+                    </div> <br>
                  <fieldset>
                   <legend>Dados Situacionais</legend>
                     <div class="row">
@@ -129,7 +140,7 @@
                                 <label>Matrícula</label>
                                 <input class="form-control" type="text" name="matricula" id="nrInscricao" readonly>
                             </div>
-                            <div class="col-lg-2">
+                            <div class="col-lg-4">
                                 <label>Data de Apresentação</label>
                                 <input class="form-control" type="date" name="da" value="<?php echo date("Y-m-d");?>" >
                             </div>
@@ -141,6 +152,10 @@
                                 <label>Trigrama</label>
                                 <input class="form-control" type="text" name="trigrama" placeholder="ABC">
                             </div>
+                        </div>
+                    </div> <br/>
+                    <div class="row">
+                        <div class="form-group">
                             <div class="col-lg-2">
                                 <label>A / Q / S</label>
                                 <input class="form-control" type="text" name="aqs">
@@ -149,12 +164,11 @@
                                 <label>P / G</label>
                                 <input class="form-control" type="text" name="pg">
                             </div>
-                            <br/>
-                            <div class="col-lg-2 format">
+                            <div class="col-lg-2">
                                 <label>Força</label>
                                 <input class="form-control" type="text" name="forca">
                             </div>
-                            <div class="form-group col-sm-3 format">
+                            <div class="form-group col-sm-4">
                                <label>País de Origem</label>
                                <select class="form-control" name="po">
                                  <option value=""></option>
@@ -334,9 +348,13 @@
                                  <option value="Zimbábue">Zimbábue</option>
                                </select>
                             </div>
+                       </div>
+                    </div> <br/>
+                    <div class="row">
+                        <div class="form-group">
                             <div class="form-group col-sm-2 format">
                                <label>Cargo / Função</label>
-                               <select class="form-control" name="funcao">
+                               <select class="form-control" name="cf">
                                  <option value=""></option> 
                                  <option value="Aluno">Aluno</option> 
                                  <option value="Instrutor">Instrutor</option> 
@@ -368,11 +386,12 @@
                                  <option value="11">11ª - DF, GO, TO e MG (Triangulo Mineiro)</option> 
                                  <option value="12">12ª - AC, AM, RO e RR</option>  
                         	   </select>
-                        	</div>   
-                        </div>
-                    </div><br>
-                 </fieldset>
-                 <fieldset>
+                        	</div>
+                        </div>  
+                 </div>
+                </div><br>
+                </fieldset>
+                <fieldset>
                   <legend>Dados Pessoais</legend>
                     <div class="row">
                         <div class="form-group">
@@ -389,22 +408,25 @@
                                     <input type="radio" value="F" <?php if (isset($tipo) && $tipo == "F") echo "checked";?> name="tipo">F
                                 </label>
                             </div>
-                            <div class="col-lg-2">
-                                <label>Data de Nascimento</label>
-                                <input class="form-control" type="date" name="dataNascimento">
-                            </div>
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <div class="form-group">
                             <div class="col-lg-2">
                                 <label>E-Mail</label>
                                 <input class="form-control" type="email" name="email">
                             </div>
-                        </div>
-                    </div><br>
-                    
+                            <div class="col-lg-4">
+                                <label>Data de Nascimento</label>
+                                <input class="form-control" type="date" name="dn">
+                            </div>
+                        </div>    
+                    </div><br/>
                     <div class="row">
                         <div class="form-group">
                             <div class="col-lg-2">
                                 <label>Estado Civil</label>
-                                <input class="form-control" type="text" name="estadoCivil">
+                                <input class="form-control" type="text" name="ec">
                             </div>
                             <div class="col-lg-2">
                                 <label>Naturalidade</label>
@@ -431,7 +453,7 @@
                                 <label>Órgão Expeditor</label>
                                 <input class="form-control" type="text" name="oe">
                             </div>
-                            <div class="col-lg-2">
+                            <div class="col-lg-4">
                                 <label>Data de Expedição</label>
                                 <input class="form-control" type="date" name="de">
                             </div>
@@ -545,13 +567,13 @@
                         
                     </div>
                 </fieldset>
-                    <br>
+                    <br/>
                     <div class="row">
                         <div class="form-group">
-                            <div class="col-lg-12 col-lg-offset-5">
+                            <div class="col-lg-10 col-lg-offset-5">
                                 <button type="reset" class="btn btn-default">Limpar</button>
-                                <button type="submit" name="cadastroTitular" class="btn btn-success">Cadastrar</button>
-                                <button type="
+                                <button type="submit" name="cadastroPessoal" class="btn btn-success">Cadastrar</button>
+                                <button type="button" class="btn btn-info">Sair Edição</button>
                             </div>
                         </div>
                     </div>
