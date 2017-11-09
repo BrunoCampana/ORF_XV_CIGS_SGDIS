@@ -1,0 +1,10 @@
+.scrollContainer { max-height: 150px; width: auto; margin: 20px; overflow-y: auto;}
+
+table {
+    table-layout: fixed;
+}
+
+tr.selected td {
+    background-color: lightgray;
+    color: #fff;
+}
