@@ -9,11 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    
+
+    <title>Cadastro de Turma</title>
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
-    <title>Cadastro de Curso</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -62,7 +62,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            <center>Cadastro de Curso</center>
+                            <center>Cadastro de Turma</center>
                         </h1>
                     </div>
                 </div><br>
@@ -71,15 +71,15 @@
                 <?php 
                     include_once 'database.php';
                     $cod = $_POST['cod'];
-                    $ni = $_POST['ni'];
-                    $nc = $_POST['nc'];
-                    $da = $_POST['da'];
-                    $dt = $_POST['dt'];
-                    $abreviatura = $_POST['abreviatura'];
-                    $turno = $_POST['turno'];
-                    $ma = $_POST['ma'];
+                    $matricula = $_POST['ni'];
+                    $da = $_POST['dc'];
+                    $ng = $_POST['da'];
+                    $trigrama = $_POST['dt'];
+                    $aqs = $_POST['abreviatura'];
+                    $pg = $_POST['turno'];
+                    $forca = $_POST['ma'];
 
-                    if (isset($_POST['cadastroCurso'])) {
+                    if (isset($_POST['cadastroTurma'])) {
                     
                     // Para Back-End
                     /*
@@ -110,7 +110,7 @@
                     </div> <br>
                     
                  <fieldset>
-				 
+
                     <div class="row">
                         <div class="form-group">
                             <div class="col-lg-2">
@@ -118,8 +118,8 @@
                                 <input class="form-control" type="text" name="ni" id="nrInscricao" readonly>
                             </div>
                             <div class="col-lg-8">
-                                <label>Nome do Curso</label>
-                                <input class="form-control" type="text" name="nc">
+                                <label>Denominação da Turma</label>
+                                <input class="form-control" type="text" name="dc">
                             </div>
                         </div>
                     </div> <br/>
@@ -128,12 +128,12 @@
                     <div class="row">
                         <div class="form-group">
                             <div class="col-lg-4">
-                                <label>Data de Criação</label>
+                                <label>Data de Início</label>
                                 <input class="form-control" type="date" name="da" value="<?php echo date("Y-m-d");?>" >
                             </div>
                             <div class="col-lg-4">
-                                <label>Mês-Ano</label>
-                                <input class="form-control" type="month" name="ma">
+                                <label>Data de Término</label>
+                                <input class="form-control" type="date" name="dt" value="<?php echo date("Y-m-d");?>" >
                             </div>
                             <div class="col-lg-2">
                                 <label>Abreviatura</label>
@@ -145,7 +145,7 @@
                     <div class="row">
                         <div class="form-group">
                             <div class="col-lg-4 format">
-                                <label>Turno</label>
+                                <label>Curso Alocado</label>
                                 <select class="form-control" name="turno">
                                    <option value=""></option>
                                    <option value="A">A - Oficiais Superiores</option>
@@ -153,25 +153,32 @@
                                    <option value="C">C - Subtenentes e Sargentos</option>
                                 </select> 
                             </div>
+                        	<div class="col-lg-4 format">
+                                <label>Mês-Ano</label>
+                                <input class="form-control" type="month" name="ma">
+                            </div>
                         </div>  
                     </div>
                 </fieldset>
                 
-                <br/> <br/>
+                <br/>
                 
                 <fieldset>
-                   <legend>Disciplinas</legend>
+                   <legend>Docentes Responsáveis</legend>
                    
                    <!-- TAG COM A CAIXA DAS DISCIPLINAS, RESULTADO DE CONSULTA -->
-                   <div class="scrollContainer"> 
+                   <div class="scrollContainer">
+                    
                     <center>
                         <table class="table table-condensed" id="mytable">
+                        
                             <thead>
                                 <tr>
                                     <th>Nome da Discipina</th>
                                     <th>Carga Horária</th>
                                 </tr>
                             </thead>
+
                             <tbody>
                               <tr class="text_data selected_grey">
                                 <td>Assalto na Selva 1</td>
@@ -196,13 +203,66 @@
                             </tbody>
                       </table>
                     </center>
+                      
                 </div>
                    
                    <div class="row">
                         <div class="form-group">
                             <div class="col-lg-10 col-lg-offset-4">
                                 <button type="button" class="btn btn-success" name="adicionar">Adicionar</button>
-			                    <button type="button" class="btn btn-warning" name="atitudes">Colocar Atitudes</button>
+			                    <button type="button" class="btn btn-danger" name="excluir">Excluir</button>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                   <legend>Alunos</legend>
+                   <!-- TAG COM A CAIXA DAS DISCIPLINAS, RESULTADO DE CONSULTA -->
+                   
+                   <div class="scrollContainer">
+                    
+                    <center>
+                        <table class="table table-condensed" id="mytable">
+                        
+                            <thead>
+                                <tr>
+                                    <th>Nome da Discipina</th>
+                                    <th>Carga Horária</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                              <tr class="text_data selected_grey">
+                                <td>Assalto na Selva 1</td>
+                                <td>15h/s</td>
+                              </tr>
+                              <tr class="text_data selected_grey">
+                                <td>Camuflagem 2</td>
+                                <td>12h/s</td>
+                              </tr>
+                              <tr class="text_data selected_grey">
+                                <td>Operação de Viatura em Mata Fechada 3</td>
+                                <td>10h/s</td>
+                              </tr>
+                              <tr class="text_data selected_grey">
+                                <td>Emboscada no Chão 3</td>
+                                <td>08h/s</td>
+                              </tr>
+                              <tr class="text_data selected_grey">
+                                <td>Emboscada na Árvore 2</td>
+                                <td>06h/s</td>
+                              </tr>
+                            </tbody>
+                      </table>
+                    </center>
+                      
+                </div>
+                   
+                   <div class="row">
+                        <div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-4">
+                                <button type="button" class="btn btn-success" name="adicionar">Adicionar</button>
 			                    <button type="button" class="btn btn-danger" name="excluir">Excluir</button>
                             </div>
                         </div>
@@ -228,6 +288,7 @@
 
         </div>
     <script src="js/selectTable.js"></script>
+    
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>

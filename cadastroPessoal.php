@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Cadastro</title>
+    <title>Cadastro de Pessoal</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -57,7 +57,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            <center>Cadastro Pessoal</center>
+                            <center>Cadastro de Pessoal</center>
                         </h1>
                     </div>
                 </div><br>
@@ -79,6 +79,7 @@
                     $rm = $_POST['rm'];
                     
                     $nome = $_POST['nome'];
+                    $tipo = $_POST['tipo'];
                     $email = $_POST['email'];
                     $dn = $_POST['dn'];
                     $ec = $_POST['ec'];

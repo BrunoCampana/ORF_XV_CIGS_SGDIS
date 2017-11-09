@@ -9,11 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
-    <title>Cadastro de Curso</title>
+    <title>Cadastro</title>
+    
+    <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -62,7 +61,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            <center>Cadastro de Curso</center>
+                            <center>Ficha Informativa de Curso</center>
                         </h1>
                     </div>
                 </div><br>
@@ -118,8 +117,8 @@
                                 <input class="form-control" type="text" name="ni" id="nrInscricao" readonly>
                             </div>
                             <div class="col-lg-8">
-                                <label>Nome do Curso</label>
-                                <input class="form-control" type="text" name="nc">
+                                <label>Denominação do Curso</label>
+                                <input class="form-control" type="text" name="dc" readonly>
                             </div>
                         </div>
                     </div> <br/>
@@ -128,16 +127,16 @@
                     <div class="row">
                         <div class="form-group">
                             <div class="col-lg-4">
-                                <label>Data de Criação</label>
-                                <input class="form-control" type="date" name="da" value="<?php echo date("Y-m-d");?>" >
+                                <label>Data de Início</label>
+                                <input class="form-control" type="date" name="da" value="<?php echo date("Y-m-d");?>" readonly>
                             </div>
                             <div class="col-lg-4">
-                                <label>Mês-Ano</label>
-                                <input class="form-control" type="month" name="ma">
+                                <label>Data de Término</label>
+                                <input class="form-control" type="date" name="dt" value="<?php echo date("Y-m-d");?>" readonly>
                             </div>
                             <div class="col-lg-2">
                                 <label>Abreviatura</label>
-                                <input class="form-control" type="text" max="6" name="abreviatura" placeholder="ABC">
+                                <input class="form-control" type="text" max="6" name="abreviatura" placeholder="ABC" readonly>
                             </div>
                         </div>
                     </div>                    
@@ -146,12 +145,16 @@
                         <div class="form-group">
                             <div class="col-lg-4 format">
                                 <label>Turno</label>
-                                <select class="form-control" name="turno">
+                                <select class="form-control" name="turno" readonly>
                                    <option value=""></option>
                                    <option value="A">A - Oficiais Superiores</option>
                                    <option value="B">B - Oficiais Subalternos</option> 
                                    <option value="C">C - Subtenentes e Sargentos</option>
                                 </select> 
+                            </div>
+                        	<div class="col-lg-4 format">
+                                <label>Mês-Ano</label>
+                                <input class="form-control" type="month" name="ma" readonly>
                             </div>
                         </div>  
                     </div>
@@ -161,17 +164,19 @@
                 
                 <fieldset>
                    <legend>Disciplinas</legend>
-                   
                    <!-- TAG COM A CAIXA DAS DISCIPLINAS, RESULTADO DE CONSULTA -->
-                   <div class="scrollContainer"> 
+                   <div class="scrollContainer">
+                    
                     <center>
                         <table class="table table-condensed" id="mytable">
+                        
                             <thead>
                                 <tr>
                                     <th>Nome da Discipina</th>
                                     <th>Carga Horária</th>
                                 </tr>
                             </thead>
+
                             <tbody>
                               <tr class="text_data selected_grey">
                                 <td>Assalto na Selva 1</td>
@@ -196,14 +201,14 @@
                             </tbody>
                       </table>
                     </center>
+                      
                 </div>
+                   
                    
                    <div class="row">
                         <div class="form-group">
-                            <div class="col-lg-10 col-lg-offset-4">
-                                <button type="button" class="btn btn-success" name="adicionar">Adicionar</button>
-			                    <button type="button" class="btn btn-warning" name="atitudes">Colocar Atitudes</button>
-			                    <button type="button" class="btn btn-danger" name="excluir">Excluir</button>
+                            <div class="col-lg-10 col-lg-offset-5">
+			                    <button type="button" class="btn btn-warning" name="atitudes">Visualizar Atitudes</button>
                             </div>
                         </div>
                     </div>
@@ -214,10 +219,8 @@
                     <legend> </legend>
                     <div class="row">
                         <div class="form-group">
-                            <div class="col-lg-10 col-lg-offset-4">
-                                <button type="reset" class="btn btn-default">Limpar</button>
-                                <button type="submit" name="cadastroCurso" class="btn btn-success">Salvar</button>
-                                <a href="mostrarCurso.php" class="btn btn-info" role="button">Saír Edição</a>
+                            <div class="col-lg-10 col-lg-offset-5">
+                                <a href="cadastroCurso.php" class="btn btn-info" role="button">Editar</a>
                             </div>
                         </div>
                     </div>

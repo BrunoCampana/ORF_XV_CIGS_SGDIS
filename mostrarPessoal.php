@@ -563,8 +563,6 @@
                   <div class="row">
                       <div class="form-group">
                           <div class="col-lg-10 col-lg-offset-5">
-                              <button type="reset" class="btn btn-default">Limpar</button>
-                              <!--<button type="submit" name="cadastroPessoal" class="btn btn-success">Cadastrar</button>-->
                               <a href="cadastroPessoal.php" class="btn btn-info" role="button">Editar</a>
                           </div>
                       </div>
