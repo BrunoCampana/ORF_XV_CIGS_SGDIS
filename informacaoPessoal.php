@@ -145,7 +145,7 @@
                                 <label>A / Q / S</label>
                                 <input class="form-control" type="text" name="aqs">
                             </div>
-                            <div class="col-lg-2">
+                            <div class="col-lg-3">
                                 <label>P / G</label>
                                 <input class="form-control" type="text" name="pg">
                             </div>

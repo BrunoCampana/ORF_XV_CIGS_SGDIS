@@ -12,6 +12,7 @@
 
     <title>Home</title>
 
+     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -24,6 +25,9 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+    <link href="css/scrollTable.css" rel="stylesheet">
+    
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -65,12 +69,84 @@
                     </form>
                     </div>
                 </div>
+                
+                <div class="scrollContainer">
+                    
+                    <center>
+                        <table class="table table-condensed" id="mytable">
+                        
+                            <thead>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Matrícula</th>
+                                    <th>CPF</th>
+                                    <th>Trigrama</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                              <tr class="text_data selected_grey">
+                                <td>John</td>
+                                <td class="matricula">0102023</td>
+                                <td>14355564567</td>
+                                <td>JOE</td>
+                              </tr>
+                              <tr class="text_data selected_grey">
+                                <td>John</td>
+                                <td class="matricula">0102023</td>
+                                <td>14355564567</td>
+                                <td>JOE</td>
+                              </tr>
+                              <tr class="text_data selected_grey">
+                                <td>John</td>
+                                <td class="matricula">0102023</td>
+                                <td>14355564567</td>
+                                <td>JOE</td>
+                              </tr>
+                              <tr class="text_data selected_grey">
+                                <td>John</td>
+                                <td class="matricula">0102023</td>
+                                <td>14355564567</td>
+                                <td>JOE</td>
+                              </tr>
+                              <tr class="text_data selected_grey">
+                                <td>John</td>
+                                <td class="matricula">0102023</td>
+                                <td>14355564567</td>
+                                <td>JOE</td>
+                              </tr>
+                              <tr class="text_data selected_grey">
+                                <td>John</td>
+                                <td class="matricula">0102023</td>
+                                <td>14355564567</td>
+                                <td>JOE</td>
+                              </tr>
+                              <tr class="text_data selected_grey">
+                                <td>John</td>
+                                <td class="matricula">0102023</td>
+                                <td>14355564567</td>
+                                <td>JOE</td>
+                              </tr>
+                              <tr class="text_data selected_grey">
+                                <td>John</td>
+                                <td class="matricula">0102023</td>
+                                <td>14355564567</td>
+                                <td>JOE</td>
+                              </tr>
+
+                            </tbody>
+                      </table>
+                    </center>
+                      
+                </div>
 
             </div>
 
         </div>
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+   
+
+    <script src="js/selectTable.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
