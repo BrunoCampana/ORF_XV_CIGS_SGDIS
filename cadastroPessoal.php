@@ -150,7 +150,7 @@
                             </div>
                             <div class="col-lg-2">
                                 <label>Trigrama</label>
-                                <input class="form-control" type="text" name="trigrama" placeholder="ABC">
+                                <input class="form-control" type="text" maxlength="3" name="trigrama" placeholder="ABC">
                             </div>
                         </div>
                     </div> <br/>
@@ -572,7 +572,7 @@
                         <div class="form-group">
                             <div class="col-lg-10 col-lg-offset-5">
                                 <button type="reset" class="btn btn-default">Limpar</button>
-                                <button type="submit" name="cadastroPessoal" class="btn btn-success">Cadastrar</button>
+                                <button type="submit" name="cadastroPessoal" class="btn btn-success">Salvar</button>
                                 <a href="mostrarPessoal.php" class="btn btn-info" role="button">Saír Edição</a>
                             </div>
                         </div>

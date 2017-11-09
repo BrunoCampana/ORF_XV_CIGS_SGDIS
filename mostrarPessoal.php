@@ -150,7 +150,7 @@
                           </div>
                           <div class="col-lg-2">
                               <label>Trigrama</label>
-                              <input class="form-control" type="text" name="trigrama" placeholder="ABC" readonly>
+                              <input class="form-control" type="text" maxlength="3" name="trigrama" placeholder="ABC" readonly>
                           </div>
                       </div>
                   </div> <br/>
@@ -564,13 +564,29 @@
                       <div class="form-group">
                           <div class="col-lg-10 col-lg-offset-5">
                               <button type="reset" class="btn btn-default">Limpar</button>
-                              <button type="submit" name="cadastroPessoal" class="btn btn-success">Cadastrar</button>
-                              <button type="button" class="btn btn-info">Sair Edição</button>
+                              <!--<button type="submit" name="cadastroPessoal" class="btn btn-success">Cadastrar</button>-->
+                              <a href="cadastroPessoal.php" class="btn btn-info" role="button">Editar</a>
                           </div>
                       </div>
                   </div>
               </form>
 
+			<br/> <br/>
+			
+			<fieldset>
+			  <label>Fichas do Aluno</label>
+			  <div class="row"> 
+			    <div class="col-lg-8 col-lg-offset-3">
+			        <button type="button" class="btn btn-primary" name="faf">FAFs</button>
+			        <button type="button" class="btn btn-primary" name="fap">FAPs</button>
+			        <button type="button" class="btn btn-primary" name="fcfci">FCFCIs</button>
+			        <button type="button" class="btn btn-primary" name="fcras">FCRASs</button>
+			        <button type="button" class="btn btn-primary" name="fid">FIDs</button>
+			        <button type="button" class="btn btn-primary" name="fmd">FMDs</button>
+			        <button type="button" class="btn btn-primary" name="frad">FRADs</button>
+			    </div>
+			  </div>
+			</fieldset>
                             
             </div>
 
