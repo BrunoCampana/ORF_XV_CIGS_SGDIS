@@ -74,10 +74,8 @@
                     $ni = $_POST['ni'];
                     $nc = $_POST['nc'];
                     $da = $_POST['da'];
-                    $dt = $_POST['dt'];
-                    $abreviatura = $_POST['abreviatura'];
                     $turno = $_POST['turno'];
-                    $ma = $_POST['ma'];
+                    $abreviatura = $_POST['abreviatura'];
 
                     if (isset($_POST['cadastroCurso'])) {
                     
@@ -132,19 +130,6 @@
                                 <input class="form-control" type="date" name="da" value="<?php echo date("Y-m-d");?>" >
                             </div>
                             <div class="col-lg-4">
-                                <label>Mês-Ano</label>
-                                <input class="form-control" type="month" name="ma">
-                            </div>
-                            <div class="col-lg-2">
-                                <label>Abreviatura</label>
-                                <input class="form-control" type="text" max="6" name="abreviatura" placeholder="ABC">
-                            </div>
-                        </div>
-                    </div>                    
-                    
-                    <div class="row">
-                        <div class="form-group">
-                            <div class="col-lg-4 format">
                                 <label>Turno</label>
                                 <select class="form-control" name="turno">
                                    <option value=""></option>
@@ -152,8 +137,12 @@
                                    <option value="B">B - Oficiais Subalternos</option> 
                                    <option value="C">C - Subtenentes e Sargentos</option>
                                 </select> 
+                            </div>  
+                            <div class="col-lg-2">
+                                <label>Abreviatura</label>
+                                <input class="form-control" type="text" max="6" name="abreviatura" placeholder="ABC">
                             </div>
-                        </div>  
+                        </div>
                     </div>
                 </fieldset>
                 
@@ -165,7 +154,7 @@
                    <!-- TAG COM A CAIXA DAS DISCIPLINAS, RESULTADO DE CONSULTA -->
                    <div class="scrollContainer"> 
                     <center>
-                        <table class="table table-condensed" id="mytable">
+                        <table class="table table-condensed" id="disciplinas">
                             <thead>
                                 <tr>
                                     <th>Nome da Discipina</th>

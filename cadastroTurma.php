@@ -168,42 +168,44 @@
                    
                    <!-- TAG COM A CAIXA DAS DISCIPLINAS, RESULTADO DE CONSULTA -->
                    <div class="scrollContainer">
-                    
                     <center>
-                        <table class="table table-condensed" id="mytable">
-                        
+                        <table class="table table-condensed" id="docentes">
                             <thead>
                                 <tr>
-                                    <th>Nome da Discipina</th>
-                                    <th>Carga Horária</th>
+                                    <th>Nome de Guerra</th>
+                                    <th>Cargo / Função</th>
+                                    <th>Matrícula</th>
                                 </tr>
                             </thead>
-
                             <tbody>
                               <tr class="text_data selected_grey">
-                                <td>Assalto na Selva 1</td>
-                                <td>15h/s</td>
+                                <td>Fulano da Selva</td>
+                                <td>Instrutor</td>
+                                <td>123456</td>
                               </tr>
                               <tr class="text_data selected_grey">
-                                <td>Camuflagem 2</td>
-                                <td>12h/s</td>
+                                <td>Sicrano da Caatinga</td>
+                                <td>Monitor</td>
+                                <td>123457</td>
                               </tr>
                               <tr class="text_data selected_grey">
-                                <td>Operação de Viatura em Mata Fechada 3</td>
-                                <td>10h/s</td>
+                                <td>Alguém da Fronteira</td>
+                                <td>Médico</td>
+                                <td>123458</td>
                               </tr>
                               <tr class="text_data selected_grey">
-                                <td>Emboscada no Chão 3</td>
-                                <td>08h/s</td>
+                                <td>Um Indivíduo</td>
+                                <td>Técnico</td>
+                                <td>123459</td>
                               </tr>
                               <tr class="text_data selected_grey">
-                                <td>Emboscada na Árvore 2</td>
-                                <td>06h/s</td>
+                                <td>Índio Guerreiro</td>
+                                <td>Fiscal</td>
+                                <td>123460</td>
                               </tr>
                             </tbody>
                       </table>
                     </center>
-                      
                 </div>
                    
                    <div class="row">
@@ -221,42 +223,44 @@
                    <!-- TAG COM A CAIXA DAS DISCIPLINAS, RESULTADO DE CONSULTA -->
                    
                    <div class="scrollContainer">
-                    
                     <center>
-                        <table class="table table-condensed" id="mytable">
-                        
+                        <table class="table table-condensed" id="alunos">
                             <thead>
                                 <tr>
-                                    <th>Nome da Discipina</th>
-                                    <th>Carga Horária</th>
+                                    <th>Nome de Guerra</th>
+                                    <th>Cargo / Função</th>
+                                    <th>Matrícula</th>
                                 </tr>
                             </thead>
-
                             <tbody>
                               <tr class="text_data selected_grey">
-                                <td>Assalto na Selva 1</td>
-                                <td>15h/s</td>
+                                <td>Fulano2 da Selva</td>
+                                <td>Aluno</td>
+                                <td>123</td>
                               </tr>
                               <tr class="text_data selected_grey">
-                                <td>Camuflagem 2</td>
-                                <td>12h/s</td>
+                                <td>Sicrano2 da Caatinga</td>
+                                <td>Aluno</td>
+                                <td>124</td>
                               </tr>
                               <tr class="text_data selected_grey">
-                                <td>Operação de Viatura em Mata Fechada 3</td>
-                                <td>10h/s</td>
+                                <td>Alguém2 da Fronteira</td>
+                                <td>Aluno</td>
+                                <td>125</td>
                               </tr>
                               <tr class="text_data selected_grey">
-                                <td>Emboscada no Chão 3</td>
-                                <td>08h/s</td>
+                                <td>Um Indivíduo2</td>
+                                <td>Aluno</td>
+                                <td>126</td>
                               </tr>
                               <tr class="text_data selected_grey">
-                                <td>Emboscada na Árvore 2</td>
-                                <td>06h/s</td>
+                                <td>Índio Guerreiro2</td>
+                                <td>Aluno</td>
+                                <td>127</td>
                               </tr>
                             </tbody>
                       </table>
                     </center>
-                      
                 </div>
                    
                    <div class="row">
@@ -277,7 +281,7 @@
                             <div class="col-lg-10 col-lg-offset-4">
                                 <button type="reset" class="btn btn-default">Limpar</button>
                                 <button type="submit" name="cadastroCurso" class="btn btn-success">Salvar</button>
-                                <a href="mostrarCurso.php" class="btn btn-info" role="button">Saír Edição</a>
+                                <a href="mostrarTurma.php" class="btn btn-info" role="button">Saír Edição</a>
                             </div>
                         </div>
                     </div>

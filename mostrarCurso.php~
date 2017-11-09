@@ -131,7 +131,7 @@
                                 <label>Data de Criação</label>
                                 <input class="form-control" type="date" name="dc" value="<?php echo date("Y-m-d");?>" readonly>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 format">
                                 <label>Turno</label>
                                 <select class="form-control" name="turno" readonly>
                                    <option value=""></option>

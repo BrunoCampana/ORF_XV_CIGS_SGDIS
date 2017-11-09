@@ -10,9 +10,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Mostrar Curso</title>
-
-    <!-- jQuery -->    
+    <title>Mostrar Turma</title>
+    
+    <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core CSS -->
@@ -62,7 +62,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            <center>Ficha Informativa de Curso</center>
+                            <center>Ficha Informativa da Turma</center>
                         </h1>
                     </div>
                 </div><br>
@@ -110,7 +110,7 @@
                     </div> <br>
                     
                  <fieldset>
-				 
+
                     <div class="row">
                         <div class="form-group">
                             <div class="col-lg-2">
@@ -118,8 +118,8 @@
                                 <input class="form-control" type="text" name="ni" id="nrInscricao" readonly>
                             </div>
                             <div class="col-lg-8">
-                                <label>Nome do Curso</label>
-                                <input class="form-control" type="text" name="nc" readonly>
+                                <label>Denominação da Turma</label>
+                                <input class="form-control" type="text" name="dc" readonly>
                             </div>
                         </div>
                     </div> <br/>
@@ -128,11 +128,24 @@
                     <div class="row">
                         <div class="form-group">
                             <div class="col-lg-4">
-                                <label>Data de Criação</label>
-                                <input class="form-control" type="date" name="dc" value="<?php echo date("Y-m-d");?>" readonly>
+                                <label>Data de Início</label>
+                                <input class="form-control" type="date" name="da" value="<?php echo date("Y-m-d");?>" readonly>
                             </div>
                             <div class="col-lg-4">
-                                <label>Turno</label>
+                                <label>Data de Término</label>
+                                <input class="form-control" type="date" name="dt" value="<?php echo date("Y-m-d");?>" readonly>
+                            </div>
+                            <div class="col-lg-2">
+                                <label>Abreviatura</label>
+                                <input class="form-control" type="text" max="6" name="abreviatura" placeholder="ABC" readonly>
+                            </div>
+                        </div>
+                    </div>                    
+                    
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-lg-4 format">
+                                <label>Curso Alocado</label>
                                 <select class="form-control" name="turno" readonly>
                                    <option value=""></option>
                                    <option value="A">A - Oficiais Superiores</option>
@@ -140,63 +153,121 @@
                                    <option value="C">C - Subtenentes e Sargentos</option>
                                 </select> 
                             </div>
-                            <div class="col-lg-2">
-                                <label>Abreviatura</label>
-                                <input class="form-control" type="text" max="6" name="abreviatura" placeholder="ABC" readonly>
+                        	<div class="col-lg-4 format" readonly>
+                                <label>Mês-Ano</label>
+                                <input class="form-control" type="month" name="ma" readonly>
                             </div>
-                        </div>                 
+                        </div>  
                     </div>
                 </fieldset>
                 
-                <br/> <br/>
+                <br/>
                 
                 <fieldset>
-                   <legend>Disciplinas</legend>
+                   <legend>Docentes Responsáveis</legend>
+                   
                    <!-- TAG COM A CAIXA DAS DISCIPLINAS, RESULTADO DE CONSULTA -->
                    <div class="scrollContainer">
-                    
                     <center>
-                        <table class="table table-condensed" id="disciplinas">
-                        
+                        <table class="table table-condensed" id="docentes">
                             <thead>
                                 <tr>
-                                    <th>Nome da Discipina</th>
-                                    <th>Carga Horária</th>
+                                    <th>Nome de Guerra</th>
+                                    <th>Cargo / Função</th>
+                                    <th>Matrícula</th>
                                 </tr>
                             </thead>
-
                             <tbody>
                               <tr class="text_data selected_grey">
-                                <td>Assalto na Selva 1</td>
-                                <td>15h/s</td>
+                                <td>Fulano da Selva</td>
+                                <td>Instrutor</td>
+                                <td>123456</td>
                               </tr>
                               <tr class="text_data selected_grey">
-                                <td>Camuflagem 2</td>
-                                <td>12h/s</td>
+                                <td>Sicrano da Caatinga</td>
+                                <td>Monitor</td>
+                                <td>123457</td>
                               </tr>
                               <tr class="text_data selected_grey">
-                                <td>Operação de Viatura em Mata Fechada 3</td>
-                                <td>10h/s</td>
+                                <td>Alguém da Fronteira</td>
+                                <td>Médico</td>
+                                <td>123458</td>
                               </tr>
                               <tr class="text_data selected_grey">
-                                <td>Emboscada no Chão 3</td>
-                                <td>08h/s</td>
+                                <td>Um Indivíduo</td>
+                                <td>Técnico</td>
+                                <td>123459</td>
                               </tr>
                               <tr class="text_data selected_grey">
-                                <td>Emboscada na Árvore 2</td>
-                                <td>06h/s</td>
+                                <td>Índio Guerreiro</td>
+                                <td>Fiscal</td>
+                                <td>123460</td>
                               </tr>
                             </tbody>
                       </table>
                     </center>
-                      
                 </div>
-                   
                    
                    <div class="row">
                         <div class="form-group">
-                            <div class="col-lg-10 col-lg-offset-5">
-			                    <button type="button" class="btn btn-warning" name="atitudes">Visualizar Atitudes</button>
+                            <div class="col-lg-10 col-lg-offset-4">
+                                <a href="mostrarPessoal.php" class="btn btn-primary" role="button">Visualizar Ficha Pessoal (e RSA)</a>
+			                    <button type="button" class="btn btn-primary" name="veraluno">Visualizar RLFOIM</button>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                   <legend>Alunos</legend>
+                   <!-- TAG COM A CAIXA DAS DISCIPLINAS, RESULTADO DE CONSULTA -->
+                   
+                   <div class="scrollContainer">
+                    <center>
+                        <table class="table table-condensed" id="alunos">
+                            <thead>
+                                <tr>
+                                    <th>Nome de Guerra</th>
+                                    <th>Cargo / Função</th>
+                                    <th>Matrícula</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="text_data selected_grey">
+                                <td>Fulano2 da Selva</td>
+                                <td>Aluno</td>
+                                <td>123</td>
+                              </tr>
+                              <tr class="text_data selected_grey">
+                                <td>Sicrano2 da Caatinga</td>
+                                <td>Aluno</td>
+                                <td>124</td>
+                              </tr>
+                              <tr class="text_data selected_grey">
+                                <td>Alguém2 da Fronteira</td>
+                                <td>Aluno</td>
+                                <td>125</td>
+                              </tr>
+                              <tr class="text_data selected_grey">
+                                <td>Um Indivíduo2</td>
+                                <td>Aluno</td>
+                                <td>126</td>
+                              </tr>
+                              <tr class="text_data selected_grey">
+                                <td>Índio Guerreiro2</td>
+                                <td>Aluno</td>
+                                <td>127</td>
+                              </tr>
+                            </tbody>
+                      </table>
+                    </center>
+                </div>
+                   
+                   <div class="row">
+                        <div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-4">
+                                <a href="mostrarPessoal.php" class="btn btn-primary" role="button">Visualizar Ficha Pessoal (e RSA)</a>
+                                <button type="button" class="btn btn-primary" name="veraluno">Visualizar RCPP</button>
                             </div>
                         </div>
                     </div>
@@ -207,8 +278,8 @@
                     <legend> </legend>
                     <div class="row">
                         <div class="form-group">
-                            <div class="col-lg-10 col-lg-offset-5">
-                                <a href="cadastroCurso.php" class="btn btn-info" role="button">Editar</a>
+                            <div class="col-lg-10 col-lg-offset-4">
+                                <a href="cadastroTurma.php" class="btn btn-info" role="button">Editar</a>
                             </div>
                         </div>
                     </div>
