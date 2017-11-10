@@ -193,13 +193,47 @@
 									    <div class="modal-content">
 									      <div class="modal-header">
 									        <button type="button" class="close" data-dismiss="modal">&times;</button>
-									         <h4 class="modal-title">Atitudes</h4>
+									         <h4 class="modal-title">Atitudes Avaliadas na Disciplina</h4>
 										  </div>
 										  <div class="modal-body">
-											<p>Some text in the modal.</p>
-										  </div>
+											<!--<p>Some text in the modal.</p>-->
+											<div class="scrollContainer"> 
+                                              <center>
+                                                <table class="table table-condensed" id="atitudes">
+                                                  <!--
+                                                    <thead>
+                                                      <tr>
+                                                        <th>Nome da Atitude</th>
+                                                      </tr>
+                                                    </thead>
+                                                  -->
+												    <tbody>
+												      <tr class="text_data selected_grey">
+												        <td>Empenho</td>
+												      </tr>
+												      <tr class="text_data selected_grey">
+												        <td>Camaradagem</td>
+												      </tr>
+												      <tr class="text_data selected_grey">
+												        <td>Safacidade na Selva</td>
+												      </tr>
+												      <tr class="text_data selected_grey">
+												        <td>Vibração do Guerreiro</td>
+												      </tr>
+												      <tr class="text_data selected_grey">
+												        <td>Carisma</td>
+												      </tr>
+												    </tbody>
+											    </table>
+											  </center>
+										    </div>
+										  </div>  
 										  <div class="modal-footer">
-										    <button type="button" class="btn btn-default" data-dismiss="modal">Sair</button>
+										    <input class="form-control" type="text" name="inserir">
+										    <br/>
+										    <button type="button" class="btn btn-success" >Inserir</button>
+										    <button type="button" class="btn btn-danger" >Remover</button>
+										    <button type="button" class="btn btn-info" data-dismiss="modal">Sair</button>
 									      </div>
 									    </div>
 									  </div>

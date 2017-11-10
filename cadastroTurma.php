@@ -211,8 +211,69 @@
                    <div class="row">
                         <div class="form-group">
                             <div class="col-lg-10 col-lg-offset-4">
-                                <button type="button" class="btn btn-success" name="adicionar">Adicionar</button>
-			                    <button type="button" class="btn btn-danger" name="excluir">Excluir</button>
+                                <button type="button" class="btn btn-success" name="ad" data-toggle="modal" data-target="#modalAD">Adicionar</button>
+								   <div class="modal fade" id="modalAD" role="dialog">
+									  <div class="modal-dialog">
+                                        <!-- Modal content-->
+									    <div class="modal-content">
+									      <div class="modal-header">
+									        <button type="button" class="close" data-dismiss="modal">&times;</button>
+									         <h4 class="modal-title">Docentes envolvidos na Disciplina</h4>
+										  </div>
+										  <div class="modal-body">
+											<!--<p>Some text in the modal.</p>-->
+											<div class="scrollContainer"> 
+                                              <center>
+                                                <table class="table table-condensed" id="docentes">
+                                                    <thead>
+                                                      <tr>
+                                                        <th>Nome de Guerra</th>
+                                                        <th>Cargo / Função</th>
+                                                        <th>Matrícula</th>
+                                                      </tr>
+                                                    </thead>
+												    <tbody>
+												      <tr class="text_data selected_grey">
+												        <td>Fulano da Selva</td>
+                                                        <td>Instrutor</td>
+                                                        <td>123456</td>
+												      </tr>
+												      <tr class="text_data selected_grey">
+												        <td>Sicrano da Caatinga</td>
+                                                        <td>Monitor</td>
+                                                        <td>123457</td>
+												      </tr>
+												      <tr class="text_data selected_grey">
+												        <td>Alguém da Fronteira</td>
+                                                        <td>Médico</td>
+                                                        <td>123458</td>
+												      </tr>
+												      <tr class="text_data selected_grey">
+												        <td>Um Indivíduo</td>
+                                                        <td>Técnico</td>
+                                                        <td>123459</td>
+												      </tr>
+												      <tr class="text_data selected_grey">
+												        <td>Índio Guerreiro</td>
+                                                        <td>Fiscal</td>
+                                                        <td>123460</td>
+												      </tr>
+												    </tbody>
+											    </table>
+											  </center>
+										    </div>
+										  </div>  
+										  <div class="modal-footer">
+										    <input class="form-control" type="text" name="inserir">
+										    <br/>
+										    <button type="button" class="btn btn-success" >Inserir</button>
+										    <button type="button" class="btn btn-danger" >Remover</button>
+										    <button type="button" class="btn btn-info" data-dismiss="modal">Sair</button>
+									      </div>
+									    </div>
+									  </div>
+									</div>
+			                    <button type="button" class="btn btn-danger" name="ed">Excluir</button>
                             </div>
                         </div>
                     </div>
@@ -266,8 +327,8 @@
                    <div class="row">
                         <div class="form-group">
                             <div class="col-lg-10 col-lg-offset-4">
-                                <button type="button" class="btn btn-success" name="adicionar">Adicionar</button>
-			                    <button type="button" class="btn btn-danger" name="excluir">Excluir</button>
+                                <button type="button" class="btn btn-success" name="aa">Adicionar</button>
+			                    <button type="button" class="btn btn-danger" name="ea">Excluir</button>
                             </div>
                         </div>
                     </div>
