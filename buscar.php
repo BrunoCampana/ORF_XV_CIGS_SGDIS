@@ -9,6 +9,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    
+    <style>
+        
+        .center {
+            position: relative;
+            left: 660px;
+            width: 40%;
+            height: auto;
+            padding: 0px;
+        }
+
+    </style>
 
     <title>Home</title>
 
@@ -46,26 +58,42 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Buscar Dados de Pessoal
+                            Buscar Dados
                         </h1>
                     </div>
                 </div><br><br><br>
                 <!-- /.row -->
+                
                 
                 <div class="row">
                     <center><img src="cigs.png" style="width:200px; height:auto;"></center>
                     <div class="col-lg-6 col-lg-offset-3">
                     <form role="form" action="resultado.php" method="get">
                         <div class="form-group input-group" style="padding-top:50px;"> 
-                            <input type="text" class="form-control" placeholder="Busque por nome de guerra, matrícula, identidade, ou trigrama" name="campo">
+                            <input type="text" class="form-control" name="campo">
+                            
                             <span class="input-group-btn"><button class="btn btn-default" type="submit" name="buscar"><i class="fa fa-search">
                                 </i></button></span>
                         </div>
                         
                     </form>
+                    </div>    
+                </div>
+                
+                <div class="center" >
+                    <div class="col-lg-6">
+                            <label class="radio-inline">
+                                <input type="radio" value="pessoal" <?php if (isset($tipo) && $tipo == "pessoal") echo "checked";?> name="tipo">Pessoal
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" value="cursos" <?php if (isset($tipo) && $tipo == "cursos") echo "checked";?> name="tipo">Cursos
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" value="turmas" <?php if (isset($tipo) && $tipo == "turmas") echo "checked";?> name="tipo">Turmas
+                            </label>
                     </div>
                 </div>
-
+                    
             </div>
 
         </div>

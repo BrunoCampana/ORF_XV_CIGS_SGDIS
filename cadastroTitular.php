@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 
-<?php
-    session_start();
-    if (!isset($_SESSION['user'])) {
-        header("Location: login.html");
-    }
-?>
+
 
 <html lang="pt-br">
 
