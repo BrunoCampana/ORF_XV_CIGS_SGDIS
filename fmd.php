@@ -50,32 +50,49 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Buscar Cursos
+                           Ficha Médica do Discente - FMD
                         </h1>
                     </div>
                 </div><br><br><br>
                 <!-- /.row -->
                 
-                 <?php 
-                    include_once 'database.php';
-                    $pessoal = $_POST['pessoal'];
-                    $cursos = $_POST['cursos'];
-                    $turmas = $_POST['turmas'];
-                ?>
-                
-                <div class="row">
-                    <center><img src="cigs.png" style="width:200px; height:auto;"></center>
-                    <div class="col-lg-6 col-lg-offset-3">
-                    <form role="form" action="resultado.php" method="get">
-                        <div class="form-group input-group" style="padding-top:50px;"> 
-                            <input type="text" class="form-control" placeholder="Busque por nome do guerra, matrícula, identidade, ou trigrama" name="campo">
-                            <span class="input-group-btn"><button class="btn btn-default" type="submit" name="buscar"><i class="fa fa-search">
-                                </i></button></span>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <div class="row">
+                            <aside class="col-lg-2">
+                                <img width="120px" class="img-rounded" src="fotos/.jpg">
+                                <input type="file" name="fileToUpload" id="fileToUpload" style="">
+                            </aside>
+                        <div class="form-group">
+                            <div class="col-lg-6">
+                                <label>Nome do Curso</label>
+                                <input class="form-control" type="text" name="nc">
+                            </div>
+                             <div class="col-lg-2">
+                                <label>Turno</label>
+                                <select class="form-control" name="turno">
+                                   <option value=""></option>
+                                   <option value="A">A - Oficiais Superiores</option>
+                                   <option value="B">B - Oficiais Subalternos</option> 
+                                   <option value="C">C - Subtenentes e Sargentos</option>
+                                </select> 
+                            </div>
+                             <div class="col-lg-2">
+                                <label>Matrícula</label>
+                                <input class="form-control" type="text" name="mat">
+                            </div>     
+                            <div class="col-lg-2">
+                                <label>Posto/Graduação</label>
+                                <input class="form-control" type="text" name="posto">
+                            </div>     
+                            <div class="col-lg-4">
+                                <label>Nome</label>
+                                <input class="form-control" type="text" name="nome">
+                            </div>     
+                            
+                            
                         </div>
-                        
-                    </form>
                     </div>
-                </div>
+                </form>    
                 
                 <div class="scrollContainer">
                     
@@ -84,67 +101,66 @@
                         
                             <thead>
                                 <tr>
-                                    <th>Nome</th>
-                                    <th>Matrícula</th>
-                                    <th>CPF</th>
-                                    <th>Trigrama</th>
+                                    <th>Nº</th>
+                                    <th>Data</th>
+                                    <th>Médico</th>
                                 </tr>
                             </thead>
 
                             <tbody>
                               <tr class="text_data selected_grey">
                                 <td>John</td>
-                                <td class="matricula">0102023</td>
+                                <td>0102023</td>
                                 <td>14355564567</td>
-                                <td>JOE</td>
+                               
+                              </tr>
+                              <tr class="text_data selected_grey">
+                                <td>John</td>
+                                <td>0102023</td>
+                                <td>14355564567</td>
+                                
+                              </tr>
+                              <tr class="text_data selected_grey">
+                                <td>John</td>
+                                <td>0102023</td>
+                                <td>14355564567</td>
+                                
+                              </tr>
+                              <tr class="text_data selected_grey">
+                                <td>John</td>
+                                <td>0102023</td>
+                                <td>14355564567</td>
+                                
+                              </tr>
+                              <tr class="text_data selected_grey">
+                                <td>John</td>
+                                <td>0102023</td>
+                                <td>14355564567</td>
+                               
+                              </tr>
+                              <tr class="text_data selected_grey">
+                                <td>John</td>
+                                <td>0102023</td>
+                                <td>14355564567</td>
+                                
                               </tr>
                               <tr class="text_data selected_grey">
                                 <td>John</td>
                                 <td class="matricula">0102023</td>
                                 <td>14355564567</td>
-                                <td>JOE</td>
+                               
                               </tr>
                               <tr class="text_data selected_grey">
                                 <td>John</td>
                                 <td class="matricula">0102023</td>
                                 <td>14355564567</td>
-                                <td>JOE</td>
-                              </tr>
-                              <tr class="text_data selected_grey">
-                                <td>John</td>
-                                <td class="matricula">0102023</td>
-                                <td>14355564567</td>
-                                <td>JOE</td>
-                              </tr>
-                              <tr class="text_data selected_grey">
-                                <td>John</td>
-                                <td class="matricula">0102023</td>
-                                <td>14355564567</td>
-                                <td>JOE</td>
-                              </tr>
-                              <tr class="text_data selected_grey">
-                                <td>John</td>
-                                <td class="matricula">0102023</td>
-                                <td>14355564567</td>
-                                <td>JOE</td>
-                              </tr>
-                              <tr class="text_data selected_grey">
-                                <td>John</td>
-                                <td class="matricula">0102023</td>
-                                <td>14355564567</td>
-                                <td>JOE</td>
-                              </tr>
-                              <tr class="text_data selected_grey">
-                                <td>John</td>
-                                <td class="matricula">0102023</td>
-                                <td>14355564567</td>
-                                <td>JOE</td>
+                               
                               </tr>
 
                             </tbody>
                       </table>
                     </center>
-                      
+                    
                 </div>
 
             </div>

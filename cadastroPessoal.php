@@ -129,7 +129,7 @@
                 <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST" enctype="multipart/form-data">
                     <div class="row">
                             <aside class="col-lg-2">
-                                <img width="120px" class="img-rounded" src="fotos/.jpg">
+                                <img width="120px" class="img-rounded" src="fotos/8.jpg">
                                 <input type="file" name="fileToUpload" id="fileToUpload" style="">
                             </aside>
                     </div> <br>
