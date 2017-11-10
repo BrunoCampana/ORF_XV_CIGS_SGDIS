@@ -158,29 +158,23 @@
                             <thead>
                                 <tr>
                                     <th>Nome da Discipina</th>
-                                    <th>Carga Horária</th>
                                 </tr>
                             </thead>
                             <tbody>
                               <tr class="text_data selected_grey">
                                 <td>Assalto na Selva 1</td>
-                                <td>15h/s</td>
                               </tr>
                               <tr class="text_data selected_grey">
                                 <td>Camuflagem 2</td>
-                                <td>12h/s</td>
                               </tr>
                               <tr class="text_data selected_grey">
                                 <td>Operação de Viatura em Mata Fechada 3</td>
-                                <td>10h/s</td>
                               </tr>
                               <tr class="text_data selected_grey">
                                 <td>Emboscada no Chão 3</td>
-                                <td>08h/s</td>
                               </tr>
                               <tr class="text_data selected_grey">
                                 <td>Emboscada na Árvore 2</td>
-                                <td>06h/s</td>
                               </tr>
                             </tbody>
                       </table>
@@ -190,9 +184,9 @@
                    <div class="row">
                         <div class="form-group">
                             <div class="col-lg-10 col-lg-offset-4">
-                                <button type="button" class="btn btn-success" name="adicionar">Adicionar</button>
+                                <button type="button" class="btn btn-success" name="adicionar" onclick="adicionarDisciplina()">Adicionar</button>
 			                    <button type="button" class="btn btn-warning" name="atitudes">Colocar Atitudes</button>
-			                    <button type="button" class="btn btn-danger" name="excluir">Excluir</button>
+			                    <button type="button" class="btn btn-danger" name="excluir" onclick="excluirDisciplina()">Excluir</button>
                             </div>
                         </div>
                     </div>
@@ -212,11 +206,20 @@
                     </div>
 
                 </form>
-                            
+                
+                <br/> <br/>
+                
+                <!-- Apenas para Validação!! -->
+                <label id="validacaoDisciplina"></label>            
             </div>
 
         </div>
+        
+    <!-- Tabela gerada pós consulta -->
     <script src="js/selectTable.js"></script>
+    
+    <!-- Funções de Botões -->
+    <script src="js/botoes.js" type="text/javascript"></script>s
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>

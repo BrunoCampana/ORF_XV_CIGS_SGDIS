@@ -161,30 +161,24 @@
                             <thead>
                                 <tr>
                                     <th>Nome da Discipina</th>
-                                    <th>Carga Horária</th>
                                 </tr>
                             </thead>
 
                             <tbody>
                               <tr class="text_data selected_grey">
                                 <td>Assalto na Selva 1</td>
-                                <td>15h/s</td>
                               </tr>
                               <tr class="text_data selected_grey">
                                 <td>Camuflagem 2</td>
-                                <td>12h/s</td>
                               </tr>
                               <tr class="text_data selected_grey">
                                 <td>Operação de Viatura em Mata Fechada 3</td>
-                                <td>10h/s</td>
                               </tr>
                               <tr class="text_data selected_grey">
                                 <td>Emboscada no Chão 3</td>
-                                <td>08h/s</td>
                               </tr>
                               <tr class="text_data selected_grey">
                                 <td>Emboscada na Árvore 2</td>
-                                <td>06h/s</td>
                               </tr>
                             </tbody>
                       </table>
