@@ -10,18 +10,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
     
-    <style>
-        
-        .center {
-            position: relative;
-            left: 660px;
-            width: 40%;
-            height: auto;
-            padding: 0px;
-        }
-
-    </style>
-
     <title>Home</title>
 
     <!-- Bootstrap Core CSS -->
@@ -81,7 +69,7 @@
                 </div>
                 
                 <div class="row" >
-                    <div class="col-lg-5 col-lg-offset-4">
+                    <div class="col-lg-5 col-lg-offset-5">
                             <label class="radio-inline">
                                 <input type="radio" value="pessoal" <?php if (isset($tipo) && $tipo == "pessoal") echo "checked";?> name="tipo">Pessoal
                             </label>
