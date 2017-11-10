@@ -1,3 +1,5 @@
+// Botões da página de Cursos
+
 function adicionarDisciplina() {
     var txt;
     var person = prompt("Insira o nome da Disciplina:", "");
@@ -17,4 +19,10 @@ function excluirDisciplina() {
     }
     document.getElementById("validacaoDisciplina").innerHTML = txt;
 };
+
+// Botões da página de Alunos
+
+
+// Botões da página de Turmas
+
 

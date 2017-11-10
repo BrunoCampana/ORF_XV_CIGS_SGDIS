@@ -181,11 +181,29 @@
                     </center>
                 </div>
                    
-                   <div class="row">
+                    <div class="row">
                         <div class="form-group">
                             <div class="col-lg-10 col-lg-offset-4">
                                 <button type="button" class="btn btn-success" name="adicionar" onclick="adicionarDisciplina()">Adicionar</button>
-			                    <button type="button" class="btn btn-warning" name="atitudes">Colocar Atitudes</button>
+                                <!-- Colocar Atitudes é Modal -->
+                                <button type="button" class="btn btn-warning" name="atitudes" data-toggle="modal" data-target="#modalCA">Colocar Atitudes</button>
+								   <div class="modal fade" id="modalCA" role="dialog">
+									  <div class="modal-dialog">
+                                        <!-- Modal content-->
+									    <div class="modal-content">
+									      <div class="modal-header">
+									        <button type="button" class="close" data-dismiss="modal">&times;</button>
+									         <h4 class="modal-title">Atitudes</h4>
+										  </div>
+										  <div class="modal-body">
+											<p>Some text in the modal.</p>
+										  </div>
+										  <div class="modal-footer">
+										    <button type="button" class="btn btn-default" data-dismiss="modal">Sair</button>
+									      </div>
+									    </div>
+									  </div>
+									</div>
 			                    <button type="button" class="btn btn-danger" name="excluir" onclick="excluirDisciplina()">Excluir</button>
                             </div>
                         </div>
