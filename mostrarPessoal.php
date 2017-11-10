@@ -580,7 +580,7 @@
 			        <button type="button" class="btn btn-primary" name="fcfci">FCFCIs</button>
 			        <button type="button" class="btn btn-primary" name="fcras">FCRASs</button>
 			        <button type="button" class="btn btn-primary" name="fid">FIDs</button>
-			        <button type="button" class="btn btn-primary" name="fmd">FMDs</button>
+			        <a href="fmd.php" class="btn btn-primary" role="button">FMDs</a>
 			        <button type="button" class="btn btn-primary" name="frad">FRADs</button>
 			    </div>
 			  </div>
