@@ -56,32 +56,31 @@
                 <div class="row">
                     <center><img src="cigs.png" style="width:200px; height:auto;"></center>
                     <div class="col-lg-6 col-lg-offset-3">
-                    <form role="form" action="resultado.php" method="get">
+                    <form role="form" <?php if (isset($tipo)) echo "action=\"mostrar" . $tipo . ".php\""; ?> method="get">
                         <div class="form-group input-group" style="padding-top:50px;"> 
                             <input type="text" class="form-control" name="campo">
                             
                             <span class="input-group-btn"><button class="btn btn-default" type="submit" name="buscar"><i class="fa fa-search">
                                 </i></button></span>
                         </div>
-                        
+                        <div class="row" >
+                          <div class="col-lg-5 col-lg-offset-5">
+                            <label class="radio-inline">
+                                <input type="radio" value="pessoal" <?php if (isset($tipo) && $tipo == "Pessoal") echo "checked";?> name="tipo">Pessoal
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" value="cursos" <?php if (isset($tipo) && $tipo == "Curso") echo "checked";?> name="tipo">Cursos
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" value="turmas" <?php if (isset($tipo) && $tipo == "Turma") echo "checked";?> name="tipo">Turmas
+                            </label>
+                          </div>
+                        </div>
                     </form>
                     </div>    
                 </div>
                 
-                <div class="row" >
-                    <div class="col-lg-5 col-lg-offset-5">
-                            <label class="radio-inline">
-                                <input type="radio" value="pessoal" <?php if (isset($tipo) && $tipo == "pessoal") echo "checked";?> name="tipo">Pessoal
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" value="cursos" <?php if (isset($tipo) && $tipo == "cursos") echo "checked";?> name="tipo">Cursos
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" value="turmas" <?php if (isset($tipo) && $tipo == "turmas") echo "checked";?> name="tipo">Turmas
-                            </label>
-                    </div>
-                </div>
-                    
+                                    
             </div>
 
         </div>
