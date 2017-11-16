@@ -1,6 +1,6 @@
 <?php
-//Connection with database 'ccfex'
-$link = mysqli_connect("localhost", "root", "root", "ccfexBeta");
+// Exemplo de conexão de Banco de Dados
+$link = mysqli_connect("localhost", "root", "root", "sgdis");
 if (!$link) {
     echo "Não foi possível conectar ao banco! ";
     exit;
@@ -21,9 +21,9 @@ if (isset($_POST['submit'])) {
         session_start();
         $_SESSION['user'] = $_POST['user'];
         $_SESSION['passwd'] = $_POST['passwd'];
-        header("Location: index.php");
+        header("Location: inicio.php");
     } else {
-        header("Location: login.html");
+        header("Location: index.html");
     }
 }
 ?>

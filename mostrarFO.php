@@ -60,7 +60,7 @@
                         <div class="form-group">
                             <div class="col-lg-2">
                                 <label>Turma</label>
-                                <select class="form-control" name="turno">
+                                <select class="form-control" name="turno" readonly>
                                    <option value=""></option>
                                    <option value="A">17/1</option>
                                    <option value="B">16/2</option> 
@@ -69,23 +69,23 @@
                             </div>
                             <div class="col-lg-4">
                                 <label>Curso/Estágio</label>
-                                <input class="form-control" type="text" name="nc">
+                                <input class="form-control" type="text" name="nc" readonly>
                             </div>
                              <div class="col-lg-2">
                                 <label>Turno</label>
-                                <input class="form-control" type="text" name="nc">
+                                <input class="form-control" type="text" name="nc" readonly>
                             </div>
                              <div class="col-lg-2">
                                 <label>Ano</label>
-                                <input class="form-control" type="text" name="mat">
+                                <input class="form-control" type="text" name="mat" readonly>
                             </div>     
                             <div class="col-lg-2">
                                 <label>Data</label>
-                                <input class="form-control" type="date" name="posto">
+                                <input class="form-control" type="date" name="posto" readonly>
                             </div>     
                         </div>
                     </div>
-                <br/>
+                </form><br/>
                     
                     <fieldset>
                         
@@ -94,32 +94,28 @@
                                 <div class="row">
                                     <div class="col-lg-1">
                                         <label>Trigrama</label>
-                                        <input class="form-control" type="text" name="num" size="3" maxlength="3">
+                                        <input class="form-control" type="text" name="num" size="3" maxlength="3" readonly>
                                     </div>
 
                                      <div class="col-lg-2">
                                         <label>Número Aluno</label>
-                                        <input class="form-control" type="text"  name="data">
+                                        <input class="form-control" type="text"  name="data" readonly>
                                     </div>
                                     <div class="col-lg-2">
                                         <label>Data do Fato</label>
-                                        <input class="form-control" type="date" name="num">
+                                        <input class="form-control" type="date" name="num" readonly>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-8 format">
                                         <label>Descrição</label>
-                                        <input class="form-control" type="text">
+                                        <input class="form-control" type="text" readonly>
                                     </div>                         
                                 </div>
-                                <br/>
-                                <div class="col-lg-10 col-lg-offset-4">
-                                    <button type="reset" class="btn btn-default" name="lFO">Limpar</button>
-                                    <button type="submit" class="btn btn-success" name="aFO">Adicionar</button>
-                                </div>
-                            </div>    
+                            </div><br/>
+                        
                     </fieldset>   
-                </form>
+                
                 </div> <br/><br/>
 
             </div> 

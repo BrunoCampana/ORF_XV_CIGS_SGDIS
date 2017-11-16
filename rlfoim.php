@@ -158,8 +158,15 @@
                       </table>
                     </center>
                 </fieldset>
-                    
-                </div>
+                
+                <div class="row"> 
+			      <div class="col-lg-8 col-lg-offset-3">
+			        <a href="mostrarFO.php" class="btn btn-primary" role="button">Visualizar</a>
+			        <a href="dadoFO.php" class="btn btn-success" role="button">Novo FO</a>
+			      </div>
+			    </div>
+                
+              </div>
 
             </div>
 

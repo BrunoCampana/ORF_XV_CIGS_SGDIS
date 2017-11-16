@@ -56,7 +56,8 @@
                 <div class="row">
                     <center><img src="cigs.png" style="width:200px; height:auto;"></center>
                     <div class="col-lg-6 col-lg-offset-3">
-                    <form role="form" <?php if (isset($tipo)) echo "action=\"mostrar" . $tipo . ".php\""; ?> method="get">
+                    <!-- <form role="form" <?php if (isset($tipo)) echo "action=\"mostrar" . $tipo . ".php\""; ?> method="get"> -->
+                    <form role="form" action="resultadoPessoal.php"; method="get">
                         <div class="form-group input-group" style="padding-top:50px;"> 
                             <input type="text" class="form-control" name="campo">
                             
@@ -64,7 +65,7 @@
                                 </i></button></span>
                         </div>
                         <div class="row" >
-                          <div class="col-lg-5 col-lg-offset-5">
+                          <div class="col-lg-10 col-lg-offset-4">
                             <label class="radio-inline">
                                 <input type="radio" value="pessoal" <?php if (isset($tipo) && $tipo == "Pessoal") echo "checked";?> name="tipo">Pessoal
                             </label>
