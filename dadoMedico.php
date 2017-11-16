@@ -140,9 +140,13 @@
                                 </div>
                             </div><br/>                    
                     </fieldset>
-                </form>    
-                
                     
+                            <div class="col-lg-10 col-lg-offset-4">
+                                    <button type="reset" class="btn btn-default" name="lFO">Limpar</button>
+                                    <button type="submit" class="btn btn-success" name="aFO">Adicionar</button>
+                            </div>
+                            
+                </form>
                 </div> <br/><br/>
 
             </div> 

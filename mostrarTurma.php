@@ -212,7 +212,7 @@
                         <div class="form-group">
                             <div class="col-lg-10 col-lg-offset-4">
                                 <a href="mostrarPessoal.php" class="btn btn-primary" role="button">Visualizar Ficha Pessoal</a>
-                                <a href="rfloim.php" class="btn btn-primary" role="button">Visualizar RLFOIM</a>
+                                <a href="rlfoim.php" class="btn btn-primary" role="button">Visualizar RLFOIM</a>
                             </div>
                         </div>
                     </div>

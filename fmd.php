@@ -162,6 +162,13 @@
                     </center>
                     
                 </div>
+                
+                <div class="row"> 
+			      <div class="col-lg-8 col-lg-offset-3">
+			        <a href="mostrarMedico.php" class="btn btn-primary" role="button">Visualizar</a>
+			        <a href="dadoMedico.php" class="btn btn-success" role="button">Nova FMD</a>
+			      </div>
+			    </div>
 
             </div>
 
