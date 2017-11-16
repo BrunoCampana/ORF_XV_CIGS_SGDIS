@@ -50,20 +50,18 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Buscar Cursos
+                            Buscar Turmas
                         </h1>
                     </div>
                 </div><br><br><br>
                 <!-- /.row -->
-                
-
                 
                 <div class="row">
                     <center><img src="cigs.png" style="width:200px; height:auto;"></center>
                     <div class="col-lg-6 col-lg-offset-3">
                     <form role="form" action="resultado.php" method="get">
                         <div class="form-group input-group" style="padding-top:50px;"> 
-                            <input type="text" class="form-control" placeholder="Busque por nome do guerra, matrícula, identidade, ou trigrama" name="campo">
+                            <input type="text" class="form-control" placeholder="Busque por nome de guerra, matrícula, identidade, ou trigrama" name="campo">
                             <span class="input-group-btn"><button class="btn btn-default" type="submit" name="buscar"><i class="fa fa-search">
                                 </i></button></span>
                         </div>
@@ -79,10 +77,9 @@
                         
                             <thead>
                                 <tr>
-                                    <th>Identificação</th>
-                                    <th>Abreviatura</th>
                                     <th>Nome</th>
-                                    
+                                    <th>Curso/Estágio</th>
+                                    <th>Turno</th>
                                 </tr>
                             </thead>
 
