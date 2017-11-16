@@ -70,19 +70,19 @@
                             </div>
                             <div class="col-lg-4">
                                 <label>Curso/Estágio</label>
-                                <input class="form-control" type="text" name="nc">
+                                <input class="form-control" type="text" name="nc" readonly>
                             </div>
                              <div class="col-lg-2">
                                 <label>Turno</label>
-                                <input class="form-control" type="text" name="nc">
+                                <input class="form-control" type="text" name="nc" readonly>
                             </div>
                              <div class="col-lg-2">
                                 <label>Ano</label>
-                                <input class="form-control" type="text" name="mat">
+                                <input class="form-control" type="text" name="mat" readonly>
                             </div>     
                             <div class="col-lg-2">
                                 <label>Data</label>
-                                <input class="form-control" type="date" name="posto">
+                                <input class="form-control" type="date" name="posto" readonly>
                             </div>     
                         </div>
                     </div>
@@ -157,10 +157,11 @@
                             </tbody>
                       </table>
                     </center>
+                    </div> <br/>
                 </fieldset>
                 
                 <div class="row"> 
-			      <div class="col-lg-8 col-lg-offset-3">
+			      <div class="col-lg-8 col-lg-offset-4">
 			        <a href="mostrarFO.php" class="btn btn-primary" role="button">Visualizar</a>
 			        <a href="dadoFO.php" class="btn btn-success" role="button">Novo FO</a>
 			      </div>
@@ -170,7 +171,7 @@
 
             </div>
 
-        </div>
+
     <!-- jQuery -->
    
 

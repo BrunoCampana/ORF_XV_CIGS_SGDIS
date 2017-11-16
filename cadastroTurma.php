@@ -343,7 +343,7 @@
                                 <button type="reset" class="btn btn-default">Limpar</button>
                                 <button type="submit" name="cadastroCurso" class="btn btn-success">Salvar</button>
                                 <a href="mostrarTurma.php" class="btn btn-info" role="button">Saír Edição</a>
-                                <button class="button" onClick="window.open('http://www.site.com');"><span class="icon">Open</span></button>
+                                
                             </div>
                         </div>
                     </div>

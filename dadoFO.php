@@ -60,7 +60,7 @@
                         <div class="form-group">
                             <div class="col-lg-2">
                                 <label>Turma</label>
-                                <select class="form-control" name="turno">
+                                <select class="form-control" name="turno" disabled>
                                    <option value=""></option>
                                    <option value="A">17/1</option>
                                    <option value="B">16/2</option> 
@@ -69,19 +69,19 @@
                             </div>
                             <div class="col-lg-4">
                                 <label>Curso/Estágio</label>
-                                <input class="form-control" type="text" name="nc">
+                                <input class="form-control" type="text" name="nc" readonly>
                             </div>
                              <div class="col-lg-2">
                                 <label>Turno</label>
-                                <input class="form-control" type="text" name="nc">
+                                <input class="form-control" type="text" name="nc" readonly>
                             </div>
                              <div class="col-lg-2">
                                 <label>Ano</label>
-                                <input class="form-control" type="text" name="mat">
+                                <input class="form-control" type="text" name="mat" readonly>
                             </div>     
                             <div class="col-lg-2">
                                 <label>Data</label>
-                                <input class="form-control" type="date" name="posto">
+                                <input class="form-control" type="date" name="posto" readonly>
                             </div>     
                         </div>
                     </div>

@@ -389,7 +389,7 @@
                       	</div>
                       </div>
                </div>
-              </div><br>
+              
               </fieldset>
               <fieldset>
                 <legend>Dados Pessoais</legend>

@@ -65,11 +65,11 @@
                         <div class="form-group">
                             <div class="col-lg-6">
                                 <label>Nome do Curso</label>
-                                <input class="form-control" type="text" name="nc">
+                                <input class="form-control" type="text" name="nc" readonly>
                             </div>
                              <div class="col-lg-2">
                                 <label>Turno</label>
-                                <select class="form-control" name="turno">
+                                <select class="form-control" name="turno" disabled>
                                    <option value=""></option>
                                    <option value="A">A - Oficiais Superiores</option>
                                    <option value="B">B - Oficiais Subalternos</option> 
@@ -78,7 +78,7 @@
                             </div>
                              <div class="col-lg-2">
                                 <label>Matrícula</label>
-                                <input class="form-control" type="text" name="mat">
+                                <input class="form-control" type="text" name="mat" readonly>
                             </div>        
                         </div>
                     </div><br/>
@@ -91,11 +91,11 @@
                             
                             <div class="col-lg-2">
                                 <label>Posto/Graduação</label>
-                                <input class="form-control" type="text" name="posto">
+                                <input class="form-control" type="text" name="posto" readonly>
                             </div>     
                             <div class="col-lg-4">
                                 <label>Nome</label>
-                                <input class="form-control" type="text" name="nome">
+                                <input class="form-control" type="text" name="nome" readonly>
                             </div> 
                         </div>
                     </div><br/>
@@ -147,7 +147,7 @@
                             </div>
                             
                 </form>
-                </div> <br/><br/>
+                </div> <br/>
 
             </div> 
 

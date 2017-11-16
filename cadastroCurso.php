@@ -249,7 +249,7 @@
                     <legend> </legend>
                     <div class="row">
                         <div class="form-group">
-                            <div class="col-lg-10 col-lg-offset-4">
+                            <div class="col-lg10 col-lg-offset-4">
                                 <button type="reset" class="btn btn-default">Limpar</button>
                                 <button type="submit" name="cadastroCurso" class="btn btn-success">Salvar</button>
                                 <a href="mostrarCurso.php" class="btn btn-info" role="button">Saír Edição</a>

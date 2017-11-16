@@ -189,8 +189,9 @@
                    
                    <div class="row">
                         <div class="form-group">
-                            <div class="col-lg-10 col-lg-offset-5">
-			                    <button type="button" class="btn btn-warning" name="atitudes">Visualizar Atitudes</button>
+                            <div class="col-lg-10 col-lg-offset-4">
+			                    <a href="cadastroCurso.php" class="btn btn-info" role="button">Editar</a>
+                                <button type="button" class="btn btn-warning" name="atitudes">Visualizar Atitudes</button>
                             </div>
                         </div>
                     </div>
@@ -198,15 +199,7 @@
                 
                     <br/> <br/>
                     
-                    <legend> </legend>
-                    <div class="row">
-                        <div class="form-group">
-                            <div class="col-lg-10 col-lg-offset-5">
-                                <a href="cadastroCurso.php" class="btn btn-info" role="button">Editar</a>
-                            </div>
-                        </div>
-                    </div>
-
+                   
                 </form>
                             
             </div>

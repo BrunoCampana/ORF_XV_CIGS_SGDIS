@@ -139,6 +139,16 @@
                     </center>
                       
                 </div>
+                
+                <br />
+                
+                 <div class="row">
+                        <div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-5">
+                                <button type="button" class="btn btn-warning" name="atitudes">Visualizar</button>
+                            </div>
+                        </div>
+                    </div>
 
             </div>
 

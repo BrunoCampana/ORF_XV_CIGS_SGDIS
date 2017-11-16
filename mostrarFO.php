@@ -114,7 +114,15 @@
                                 </div>
                             </div><br/>
                         
-                    </fieldset>   
+                    </fieldset> 
+                
+                 <div class="row">
+                      <div class="form-group">
+                          <div class="col-lg-10 col-lg-offset-5">
+                              <a href="cadastroPessoal.php" class="btn btn-info" role="button">Editar</a>
+                          </div>
+                      </div>
+                  </div>
                 
                 </div> <br/><br/>
 

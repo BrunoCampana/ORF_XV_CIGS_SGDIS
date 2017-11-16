@@ -65,11 +65,11 @@
                         <div class="form-group">
                             <div class="col-lg-6">
                                 <label>Nome do Curso</label>
-                                <input class="form-control" type="text" name="nc">
+                                <input class="form-control" type="text" name="nc" readonly>
                             </div>
                              <div class="col-lg-2">
                                 <label>Turno</label>
-                                <select class="form-control" name="turno">
+                                <select class="form-control" name="turno" disabled>
                                    <option value=""></option>
                                    <option value="A">A - Oficiais Superiores</option>
                                    <option value="B">B - Oficiais Subalternos</option> 
@@ -78,15 +78,15 @@
                             </div>
                              <div class="col-lg-2">
                                 <label>Matrícula</label>
-                                <input class="form-control" type="text" name="mat">
+                                <input class="form-control" type="text" name="mat" readonly>
                             </div>     
                             <div class="col-lg-2">
                                 <label>Posto/Graduação</label>
-                                <input class="form-control" type="text" name="posto">
+                                <input class="form-control" type="text" name="posto" readonly>
                             </div>     
                             <div class="col-lg-4">
                                 <label>Nome</label>
-                                <input class="form-control" type="text" name="nome">
+                                <input class="form-control" type="text" name="nome" readonly>
                             </div>     
                             
                             
@@ -161,12 +161,12 @@
                       </table>
                     </center>
                     
-                </div>
+                </div> <br />
                 
                 <div class="row"> 
-			      <div class="col-lg-8 col-lg-offset-3">
+			      <div class="col-lg-8 col-lg-offset-4">
 			        <a href="mostrarMedico.php" class="btn btn-primary" role="button">Visualizar</a>
-			        <a href="dadoMedico.php" class="btn btn-success" role="button">Nova FMD</a>
+			        <a href="dadoMedico.php" class="btn btn-success" role="button">Nova Entrada</a>
 			      </div>
 			    </div>
 
