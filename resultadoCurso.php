@@ -88,51 +88,27 @@
 
                             <tbody>
                               <tr class="text_data selected_grey">
-                                <td>John</td>
-                                <td class="matricula">0102023</td>
-                                <td>14355564567</td>
+                                <td class="identificacao">1110</td>
+                                <td>EAS</td>
+                                <td>Estágio de Adaptação na Selva</td>
                                 
                               </tr>
                               <tr class="text_data selected_grey">
-                                <td>John</td>
-                                <td class="matricula">0102023</td>
-                                <td>14355564567</td>
+                                <td class="identificacao">1111</td>
+                                <td>COS C</td>
+                                <td>Curso de Operação na Selva - C</td>
                                 
                               </tr>
                               <tr class="text_data selected_grey">
-                                <td>John</td>
-                                <td class="matricula">0102023</td>
-                                <td>14355564567</td>
+                                <td class="identificacao">1112</td>
+                                <td>COS B</td>
+                                <td>Curso de Operação na Selva - B</td>
                                 
                               </tr>
                               <tr class="text_data selected_grey">
-                                <td>John</td>
-                                <td class="matricula">0102023</td>
-                                <td>14355564567</td>
-                                
-                              </tr>
-                              <tr class="text_data selected_grey">
-                                <td>John</td>
-                                <td class="matricula">0102023</td>
-                                <td>14355564567</td>
-                                
-                              </tr>
-                              <tr class="text_data selected_grey">
-                                <td>John</td>
-                                <td class="matricula">0102023</td>
-                                <td>14355564567</td>
-                                
-                              </tr>
-                              <tr class="text_data selected_grey">
-                                <td>John</td>
-                                <td class="matricula">0102023</td>
-                                <td>14355564567</td>
-                                
-                              </tr>
-                              <tr class="text_data selected_grey">
-                                <td>John</td>
-                                <td class="matricula">0102023</td>
-                                <td>14355564567</td>
+                                <td class="identificacao">1113</td>
+                                <td>COS A</td>
+                                <td>Curso de Operação na Selva - A</td>
                                 
                               </tr>
 

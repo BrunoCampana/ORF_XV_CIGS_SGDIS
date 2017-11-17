@@ -85,51 +85,21 @@
 
                             <tbody>
                               <tr class="text_data selected_grey">
-                                <td>John</td>
-                                <td class="matricula">0102023</td>
-                                <td>14355564567</td>
+                                <td>General Osório</td>
+                                <td>Curso de Operação na Selva</td>
+                                <td>C</td>
                                 
                               </tr>
                               <tr class="text_data selected_grey">
-                                <td>John</td>
-                                <td class="matricula">0102023</td>
-                                <td>14355564567</td>
+                                <td>Marechal Rondon</td>
+                                <td>Curso de Operação na Selva</td>
+                                <td>C</td>
                                 
                               </tr>
                               <tr class="text_data selected_grey">
-                                <td>John</td>
-                                <td class="matricula">0102023</td>
-                                <td>14355564567</td>
-                                
-                              </tr>
-                              <tr class="text_data selected_grey">
-                                <td>John</td>
-                                <td class="matricula">0102023</td>
-                                <td>14355564567</td>
-                                
-                              </tr>
-                              <tr class="text_data selected_grey">
-                                <td>John</td>
-                                <td class="matricula">0102023</td>
-                                <td>14355564567</td>
-                                
-                              </tr>
-                              <tr class="text_data selected_grey">
-                                <td>John</td>
-                                <td class="matricula">0102023</td>
-                                <td>14355564567</td>
-                                
-                              </tr>
-                              <tr class="text_data selected_grey">
-                                <td>John</td>
-                                <td class="matricula">0102023</td>
-                                <td>14355564567</td>
-                                
-                              </tr>
-                              <tr class="text_data selected_grey">
-                                <td>John</td>
-                                <td class="matricula">0102023</td>
-                                <td>14355564567</td>
+                                <td>Juscelino Kubitscheck</td>
+                                <td>Curso de Operação na Selva</td>
+                                <td>C</td>
                                 
                               </tr>
 
